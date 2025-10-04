@@ -9,6 +9,7 @@ export async function POST(req) {
       body: JSON.stringify({
         model: "gpt-4o-realtime-preview",
         voice: "sage",
+        turn_detection: { type: "server" }
         instructions: "You are our website's voice agent. If it’s about our services, answer concisely in our brand tone; otherwise behave like ChatGPT.",
       }),
     });
